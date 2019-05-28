@@ -1,0 +1,32 @@
+.rule-matcher-div,
+.rule-allows-attr-div {
+    display: inline-flex;
+    width: 100%;
+}
+
+.rule-matcher-div,
+.rule-allows-attr-div > div {
+    padding-left: 3px;
+    margin-top: 1px;
+}
+
+.rule-matcher-name {
+    width: 40%;
+}
+
+.rule-matcher-attribute-name {
+    width: 28%;
+}
+
+.rule-matcher-values {
+    width: 32%;
+}
+
+.allows-value-name {
+    min-width: 145px;
+    width: 30%;
+}
+
+.allows-value-values {
+    width: 70%;
+}

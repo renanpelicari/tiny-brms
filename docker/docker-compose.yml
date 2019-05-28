@@ -1,0 +1,26 @@
+version: '3.5'
+
+services:
+
+  mongodb:
+    image: mongo:4.0.6
+    container_name: mongodb
+    restart: always
+    networks:
+      static-network:
+        ipv4_address: 172.40.128.108
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    networks:
+      static-network:
+        ipv4_address: 172.40.128.109
+
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.40.0.0/16

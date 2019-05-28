@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure.include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://172.40.128.108:27017/tiny-brms

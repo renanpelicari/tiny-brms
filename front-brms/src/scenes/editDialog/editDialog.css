@@ -1,0 +1,20 @@
+.enum-select {
+    width: 100%;
+}
+
+.string-array-field {
+    width: 100%;
+}
+
+.selected-items {
+    display: inline-flex;
+    height: 34px;
+}
+
+.selected-items > div {
+    border-radius: 12px;
+    background-color: #bbdefb;
+    padding: 6px;
+    margin: 2px;
+    cursor: pointer;
+}
