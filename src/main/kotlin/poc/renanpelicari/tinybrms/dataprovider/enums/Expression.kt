@@ -3,6 +3,24 @@ package poc.renanpelicari.tinybrms.dataprovider.enums
 import java.time.LocalDate
 
 enum class Expression {
+    BETWEEN_INTEGER {
+        override fun validate(expectedValues: Set<String>, receivedValues: Set<String>): Boolean {
+
+            val sortedExpectedValues = expectedValues.map { it.toBigInteger() }.sorted()
+
+            return receivedValues.first().toBigInteger() in
+                    sortedExpectedValues.first()..sortedExpectedValues.last()
+        }
+    },
+    BETWEEN_DOUBLE {
+        override fun validate(expectedValues: Set<String>, receivedValues: Set<String>): Boolean {
+
+            val sortedExpectedValues = expectedValues.map { it.toDouble() }.sorted()
+
+            return receivedValues.first().toDouble() in
+                    sortedExpectedValues.first()..sortedExpectedValues.last()
+        }
+    },
     CONTAINS {
         override fun validate(expectedValues: Set<String>, receivedValues: Set<String>) =
                 expectedValues.contains(receivedValues.first())

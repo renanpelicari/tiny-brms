@@ -16,6 +16,8 @@ const FieldType = {
 };
 
 const ExpressionEnum = {
+  BETWEEN_INTEGER: { name: 'BETWEEN_INTEGER', description: 'Between (Integer)' },
+  BETWEEN_DOUBLE: { name: 'BETWEEN_DOUBLE', description: 'Between (Double)' },
   CONTAINS: { name: 'CONTAINS', description: 'Contains' },
   NOT_CONTAINS: { name: 'NOT_CONTAINS', description: 'Not Contains' },
   EQUAL: { name: 'EQUAL', description: 'Equal' },
