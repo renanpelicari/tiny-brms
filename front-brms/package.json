@@ -5,7 +5,7 @@
   "dependencies": {
     "@material-ui/core": "^3.9.2",
     "@material-ui/icons": "latest",
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "classnames": "latest",
     "material-dashboard-react": "^1.6.0",
     "material-kit-react": "^1.4.0",
